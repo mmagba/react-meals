@@ -1,8 +1,8 @@
 .summary {
     position: relative;
-    top: -200px;
     width: 750px;
-    margin: 100px auto;
+    margin: auto;
+    margin-top: -10rem;
     color: white;
     text-align: center;
     background-color: gray;
