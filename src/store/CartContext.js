@@ -1,8 +1,6 @@
 import React from 'react';
 
-const CartContext = React.createContext({
-    cartArray: [1,2,4]
-});
+const CartContext = React.createContext();
 
 
 export default CartContext;

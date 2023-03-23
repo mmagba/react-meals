@@ -3,7 +3,7 @@ import AvailableMeals from './components/Meals/AvailableMeals';
 import MealsSummary from './components/Meals/MealsSummary';
 import Cart from './components/Cart/Cart';
 import { useState } from 'react';
-import CartContext from './store/CartContext';
+import CartProvider from './store/CartProvider';
 function App() {
   const [cartIsOpenState, setCartIsOpenState] = useState(false);
 
@@ -16,12 +16,12 @@ function App() {
   }
 
   return (
-    <CartContext.Provider>
+    <CartProvider>
       {cartIsOpenState && <Cart closeCartHandler={closeCartHandler} />}
       <Header openCartHandler={openCartHandler} />
       <MealsSummary />
       <AvailableMeals />
-    </CartContext.Provider>
+    </CartProvider>
   );
 }
 
